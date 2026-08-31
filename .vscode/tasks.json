@@ -1,0 +1,35 @@
+// {
+//     // See https://go.microsoft.com/fwlink/?LinkId=733558
+//     // for the documentation about the tasks.json format
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "echo",
+//             "type": "shell",
+//             "command": "echo Hello"
+//         }
+//     ]
+// }
+
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build with CS50",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "${fileDirname}/cs50.c",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
