@@ -29,3 +29,6 @@ gcc filename.c cs50.c -o filename.exe<br>
 Option B: VS Code Build & Debug (F5 Play Buttion)<br>
 Create a .vscode folder in the project workspace with these two config files:<br> 
 .vscode\tasks.json and .vscode\launch.json<br>
+
+#### Other Notes
+Style Guide for C: https://cs50.readthedocs.io/style/c/
