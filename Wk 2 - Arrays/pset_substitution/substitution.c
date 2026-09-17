@@ -6,7 +6,6 @@
 
 bool is_valid_key(string key);
 
-
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -53,7 +52,6 @@ int main(int argc, string argv[])
     printf("\n");
     return 0;
 }
-
 
 bool is_valid_key(string key)
 {

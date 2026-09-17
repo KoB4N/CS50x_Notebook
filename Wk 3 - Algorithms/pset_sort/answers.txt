@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: sort1 runs nearly instantaneously on sorted files (e.g. sorted5000.txt) but takes a longer time on random or reversed files of the same size (e.g. random5000.txt or reversed5000.txt). This behavior indicates an O(n) best case time complexity and an O(n^2) worst case time complexity.
+
+sort2 uses: Merge sort
+
+How do you know?: sort2 runs consistently fast across, sorted, random, and reversed files of the same size with almost no variance (e.g. sorted5000.txt, random5000.txt, and reversed5000.txt), scaling moderately when input size doubles. This behaviour indicates an O(nlogn) time complexity across best, average, and worst cases regardless of initial data ordering.
+
+sort3 uses: Selection sort
+
+How do you know?: sort3 takes nearly identical, longer execution times regardless of whether the file is sorted, random, or reversed of the same size (e.g. sorted5000.txt, random5000.txt, and reversed5000.txt). This behavior indicates an O(n^2) time complexity across best, average and worst cases as the algorithm always performs the same number of comparisons regardless of initial order.

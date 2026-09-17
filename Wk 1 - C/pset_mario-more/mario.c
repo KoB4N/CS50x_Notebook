@@ -3,7 +3,6 @@
 
 void print_row(int spaces, int bricks);
 
-
 int main(void)
 {
     int height;
@@ -19,7 +18,6 @@ int main(void)
         print_row(height - i, i);
     }
 }
-
 
 void print_row(int spaces, int bricks)
 {

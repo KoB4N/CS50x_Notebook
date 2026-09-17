@@ -7,7 +7,6 @@
 bool only_digits(string s);
 char rotate(char c, int n);
 
-
 int main(int argc, string argv[])
 {
     // Make sure program was run with just one command-line argument
@@ -45,7 +44,6 @@ int main(int argc, string argv[])
     return 0;
 }
 
-
 bool only_digits(string s)
 {
     for (int i = 0, len = strlen(s); i < len; i++)
@@ -57,7 +55,6 @@ bool only_digits(string s)
     }
     return true;
 }
-
 
 char rotate(char c, int n)
 {

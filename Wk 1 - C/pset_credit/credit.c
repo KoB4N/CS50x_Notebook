@@ -5,7 +5,6 @@ int calc_checksum(long card_num);
 int get_len(long card_num);
 int get_digit_one_two(long card_num);
 
-
 int main(void) 
 {
     long card_num;
@@ -43,7 +42,6 @@ int main(void)
     }
 }
 
-
 int calc_checksum(long card_num)
 {
     int sum = 0;
@@ -70,7 +68,6 @@ int calc_checksum(long card_num)
     return sum;
 }
 
-
 int get_len(long card_num)
 {
     int len = 0;
@@ -81,7 +78,6 @@ int get_len(long card_num)
     }
     return len;
 }
-
 
 int get_digit_one_two(long card_num) 
 {

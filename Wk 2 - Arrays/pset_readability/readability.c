@@ -8,7 +8,6 @@ int count_letters(string text);
 int count_words(string text);
 int count_sentences(string text);
 
-
 int main(void)
 {
     // Prompt the user for some text
@@ -37,7 +36,6 @@ int main(void)
     }
 }
 
-
 int count_letters(string text)
 {
     // Return the number of letters in text
@@ -52,7 +50,6 @@ int count_letters(string text)
     return letter_cnt;
 }
 
-
 int count_words(string text)
 {
     // Return the number of words in text
@@ -66,7 +63,6 @@ int count_words(string text)
     }
     return word_cnt;
 }
-
 
 int count_sentences(string text)
 {
