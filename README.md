@@ -4,7 +4,7 @@ All problem sets are located in this repository.
 ## Week 0 - Scratch
 Load the .sb3 file into https://scratch.mit.edu to run the program.
 
-## Week 1 - C
+## Week 1 to 5 - C
 ### Local Windows Set-Up
 #### Environment Setup
 1. Open PowerShell and run to install MSYS2:<br> 
