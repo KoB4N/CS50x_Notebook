@@ -1,0 +1,24 @@
+Question 1: 
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+Answer 1: 
+Run sqlite3 songs.db for songs database.
+Run SELECT AVG(energy), AVG(valence), AVG(danceability) FROM songs; to calculate the average energy, valence, and danceability across all 100 songs.
+Danceability (high audio aura) - The listener prefers rhythmic, beat-heavy tracks suitable for dancing.
+Energy (moderately high) - The songs tend to be active, fast, and loud rather than quiet or ambient.
+Valence (moderate/neutral) - The emotional tone is balanced - neither overly euphoric nor deeply melancholic.
+I would characterize their audio aura as "Energetic & Groovy" or "Rhythmic Chill" as someone who loves upbeat, danceable rhythms with a dynamic mix of balanced emotional tones.
+
+Question 2: 
+Hypothesize about why the way you've calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+
+Answer 2:
+Simply averaging falls short due to:
+Ignores play count (unweighted) - The top 100 list treats a song played 500 times the same as a song played 5 times.
+Skewed by outliers / bimodal distribution - A listener might listen to 50 high-energy workout songs (Energy = 1.0) and 50 ambient sleep songs (Energy = 0.0). Their average energy would be 0.5, which represents neither of their actual listening states.
+Ignores time & context - Averaging across an entire year masks changes in mood across seasons, times of day, or life events.
+
+Proposed improvements:
+Weighted averages - Weigh each track's audio features by total play count or listening time.
+Clustering analysis - Use clustering algorithms (e.g. K-Means) to group songs into 2 to 3 distinct "mood clusters" (e.g. "Workout Hype", "Focus", "Late Night") rather than flattening everything into a single mean.
+Time-segmented auras - Calculate monthly or time-of-day auras to reflect temporal shifts in listening habits.

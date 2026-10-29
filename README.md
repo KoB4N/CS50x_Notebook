@@ -31,4 +31,23 @@ Create a .vscode folder in the project workspace with these two config files:<br
 .vscode\tasks.json and .vscode\launch.json<br>
 
 #### Other Notes
-Style Guide for C: https://cs50.readthedocs.io/style/c/
+Style Guide for C: https://cs50.readthedocs.io/style/c/<br>
+
+## Week 6 - Python
+#### Project File Compilation
+Open Command Prompt or VS Code terminal (Ctrl + ~), and cd directory to run:<br>
+python filename.py<br>
+
+#### Other Notes
+Python Documentation: https://docs.python.org/3/builtins/index.html<br>
+
+## Week 7 - SQL
+#### Project File Compilation
+Open Command Prompt or VS Code terminal (Ctrl + ~), and cd directory to run:<br>
+sqlite3 db_name.db<br>
+.schema -- to view tables and values datatype<br>
+-- insert SQL query to retrive required info<br>
+
+#### Other Notes
+Syntax Guide for SQL: https://www.w3schools.com/sql/sql_ref_keywords.asp<br>
+Style Guide for SQL: https://www.sqlstyle.guide/#indentation<br>
